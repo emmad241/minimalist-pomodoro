@@ -1,15 +1,18 @@
 const startTimerBtn = document.getElementById('start-timer-btn');
 const stopTimerBtn = document.getElementById('stop-timer-btn');
 const counter = document.getElementById('counter');
+const tomato = document.getElementById('tomato-text');
 const gong = 'http://www.buddhadhammasangha.com/SecondLevelSite/ThirdLevelSite/AudioAndVideo/Audio/Audio_Library/wavFiles/gong-burmese.wav';
 const sound = new Audio(gong);
 
 startTimerBtn.addEventListener("click", function () {
-	startTimer(1500, 300, counter);
+	startTimer(3, 3, counter);
+	tomato.innerHTML = 'Keep working';
 });
 
 stopTimerBtn.addEventListener("click", function () {
 	stopTimer(counter);
+	tomato.innerHTML = '';
 });
 
 let countdown;
@@ -30,6 +33,7 @@ function startTimer(workTime, playTime, timer){
 		if(time == 0) {
 			if(working){
 				timer.innerHTML = 'Time is up, take a 5 minute break';
+				tomato.innerHTML = 'Relax';
 				sound.play();
 				messaging = true;
 
@@ -41,6 +45,7 @@ function startTimer(workTime, playTime, timer){
 				return;
 			}else{
 				timer.innerHTML = 'Break time is over!';
+				tomato.innerHTML = '';
 				sound.play();
 
 				setTimeout(function() {

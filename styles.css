@@ -59,3 +59,20 @@ body{
 #tomato-img{
     width:20%;
 }
+
+#tomato-img:hover{
+    color:blue;
+}
+
+#tomato-text {
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    font-size: 20px;
+}
+
+#tomato-text:hover{
+    color:white;
+}
