@@ -1,19 +1,23 @@
-const timerBtn = document.getElementById('timer-btn');
+const startTimerBtn = document.getElementById('start-timer-btn');
+const stopTimerBtn = document.getElementById('stop-timer-btn');
 const counter = document.getElementById('counter');
 const gong = 'http://www.buddhadhammasangha.com/SecondLevelSite/ThirdLevelSite/AudioAndVideo/Audio/Audio_Library/wavFiles/gong-burmese.wav';
 const sound = new Audio(gong);
 
-timerBtn.addEventListener("click", function () {
+startTimerBtn.addEventListener("click", function () {
 	startTimer(1500, 300, counter);
+});
+
+stopTimerBtn.addEventListener("click", function () {
+	stopTimer(counter);
 });
 
 let countdown;
 let messaging = false;
-function startTimer(workTime, playTime, display){
+function startTimer(workTime, playTime, timer){
 	clearInterval(countdown);
 
-	let time = workTime;
-	let timer = display;	
+	let time = workTime;	
 	let minutes, seconds;
 	let working = true;
 	countdown = setInterval(function () {
@@ -52,4 +56,9 @@ function startTimer(workTime, playTime, display){
 			time--;
 		}
 	}, 1000);
+}
+
+function stopTimer(timer){
+	clearInterval(countdown);
+	timer.innerHTML = '00:00';
 }
