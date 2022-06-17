@@ -1,0 +1,61 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    background:rgb(185, 197, 228);
+}
+
+.timer-container{
+    text-align:center;
+    display:block;
+}
+
+.counter-container{
+    width:50%;
+    height:8rem;
+    margin: 3rem auto;
+    margin-top: 8rem;
+    border-radius:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#counter{
+    color:black;
+    text-align:center;
+    font-size:32px;
+}
+
+#timer-btn{
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-size:24px;
+    margin: auto;
+    padding:5px;
+    width:10rem;
+    height:auto;
+    margin: auto;
+    border:none;
+    border-radius:10px;
+    transition-duration: 200ms;
+}
+
+#timer-btn:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background:rgb(66, 144, 193);
+    color:#ffffff;
+}
+
+#timer-btn:active{
+    background:rgb(42, 90, 120);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tomato-container{
+    margin-top:6rem;
+}
+
+#tomato-img{
+    width:20%;
+}
