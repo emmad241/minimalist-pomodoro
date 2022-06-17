@@ -5,7 +5,7 @@ const gong = 'http://www.buddhadhammasangha.com/SecondLevelSite/ThirdLevelSite/A
 const sound = new Audio(gong);
 
 startTimerBtn.addEventListener("click", function () {
-	startTimer(1500, 300, counter);
+	startTimer(5, 5, counter);
 });
 
 stopTimerBtn.addEventListener("click", function () {
@@ -42,7 +42,11 @@ function startTimer(workTime, playTime, timer){
 			}else{
 				timer.innerHTML = 'Break time is over!';
 				sound.play();
-				clearInterval(countdown);
+				
+				setTimeout(function() {
+					stopTimer(timer);
+				}, 4000);
+
 				return;
 			}
 		}
