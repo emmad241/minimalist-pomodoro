@@ -6,7 +6,7 @@ const gong = 'http://www.buddhadhammasangha.com/SecondLevelSite/ThirdLevelSite/A
 const sound = new Audio(gong);
 
 startTimerBtn.addEventListener("click", function () {
-	startTimer(3, 3, counter);
+	startTimer(1500, 300, counter);
 	tomato.innerHTML = 'Keep working';
 });
 
