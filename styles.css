@@ -1,18 +1,26 @@
 body{
     font-family:'Courier New', Courier, monospace;
-    background:rgb(185, 197, 228);
+    background:#cef8ff;
+}
+
+.main-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    height:100vh;
 }
 
 .timer-container{
     text-align:center;
     display:block;
+    width:40%;
 }
 
 .counter-container{
-    width:50%;
+    width:100%;
     height:8rem;
     margin: 3rem auto;
-    margin-top: 8rem;
     border-radius:20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background:white;
@@ -28,8 +36,8 @@ body{
 }
 
 .timer-btn{
-    background:rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
+    background:#0CCFE9;
+    color:rgb(255, 255, 255);
     font-size:24px;
     margin: auto;
     padding:5px;
@@ -43,21 +51,64 @@ body{
 
 .timer-btn:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background:rgb(66, 144, 193);
+    background:#00e1ff;
     color:#ffffff;
 }
 
 .timer-btn:active{
-    background:rgb(42, 90, 120);
+    background:#99f1ff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    color:#3a0303;
 }
 
 .tomato-container{
-    margin-top:6rem;
+    text-align: center;
 }
 
 #tomato-img{
-    width:20%;
+    width:40%;
+}
+
+@media (max-width: 51rem){
+    #tomato-img{
+        width:50%;
+    }
+
+    .timer-container{
+        width:60%;
+    }
+
+    #counter{
+        font-size: 40px;
+    }
+
+    .timer-button{
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 40rem){
+    #tomato-img{
+        width:80%;
+    }
+
+    .timer-container{
+        width:100%;
+    }
+
+    .counter-container{
+        width:95%;
+    }
+
+    #counter{
+        font-size: 33px;
+    }
+
+    .timer-button{
+        font-size: 24px;
+    }
+    
 }
 
 #tomato-img:hover{
