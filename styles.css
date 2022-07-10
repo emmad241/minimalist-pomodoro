@@ -1,6 +1,6 @@
 body{
     font-family:'Courier New', Courier, monospace;
-    background:#cef8ff;
+    background: rgb(185, 197, 228);
 }
 
 .main-container{
@@ -36,7 +36,7 @@ body{
 }
 
 .timer-btn{
-    background:#0CCFE9;
+    background:rgb(151, 180, 255);
     color:rgb(255, 255, 255);
     font-size:24px;
     margin: auto;
@@ -51,14 +51,14 @@ body{
 
 .timer-btn:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background:#00e1ff;
+    background:rgb(110, 151, 255);
     color:#ffffff;
 }
 
 .timer-btn:active{
-    background:#99f1ff;
+    background:rgba(70, 117, 235, 0.82);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    color:#3a0303;
+    color:#ffffff;
 }
 
 .tomato-container{
